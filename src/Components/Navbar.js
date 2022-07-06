@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
     <Stack
       direction="row"
-      justifyContent="space-around"
+      justifyContent="space-evenly"
       sx={{
-        gap: { sm: "123px", xs: "40px" },
-        mt: { sm: "32px", xs: "20px" },
-        justifyContent: "none",
+        gap: { sm: "60px", xs: "20px" },
+        mt: { sm: "12px", xs: "8px" },
+        // justifyContent: "none",
       }}
       px="20px"
     >
@@ -19,7 +19,7 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="logo"
-          style={{ with: "48px", height: "48px", margin: "0 20px" }}
+          style={{ with: "48px", height: "48px", marginTop: "25px" }}
         />
       </Link>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "#3A1212",
-            borderBottom: "3px solid #FF2625",
+            borderBottom: "2px solid #FF2625",
           }}
         >
           Home
@@ -40,6 +40,16 @@ const Navbar = () => {
         >
           Exercises
         </a>
+
+        <Link
+          to="/Contact"
+          style={{
+            textDecoration: "none",
+            color: "#3A1212",
+          }}
+        >
+          Contact Us
+        </Link>
       </Stack>
     </Stack>
   );
